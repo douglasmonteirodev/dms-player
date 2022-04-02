@@ -32,8 +32,8 @@ function add_click_playlist() {
   for (let index in botaoPlay) {
     botaoPlay[index].onclick = () => {
       i = Number(index);
-      att_dados();
       att_playlist();
+      att_dados();
     };
   }
 }
@@ -95,7 +95,7 @@ function att_dados() {
   btn_play.style.display = "none";
   btn_pause.style.display = "flex";
   sound.play();
-  setTimeout(duration_song, 100);
+  setTimeout(duration_song, 500);
 }
 
 function duration_song() {
