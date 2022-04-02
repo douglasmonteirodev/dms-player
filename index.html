@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMS PLAYER</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <div class="player_container">
+        <div class="player_music">
+            <h1>Dms Player</h1>
+
+            <div class="description">
+                <img src="./assets/logos/musica.png" id="logo">
+                <h2 id="title">Titulo da Musica</h2>
+                <p id="artist"><i>Artista</i></p>
+            </div>
+
+            <div class="volume">
+                <i class="fa-solid fa-volume-xmark" id="muted"></i>
+                <i class="fa-solid fa-volume-high" id="vol"></i>
+                <input type="range" name="volume" id="volume_bar" value="100" oninput="volume()" />
+            </div>
+
+            <div class="bar">
+                <input type="range" name="barra" id="bar_progress" value="0" min="0" />
+            </div>
+
+            <div class="timer">
+                <span class="start">00:00</span>
+                <span class="end">00:00</span>
+            </div>
+
+            <audio id="sound"></audio>
+
+            <div class="controls">
+
+                <i class="fa-solid fa-repeat" id="btn_repeat" onclick="repeat()"></i>
+                <i class="fa-solid fa-backward-step" onclick="back()"></i>
+                <i class="fa-solid fa-play" id="btn-play" onclick="play()"></i>
+                <i class="fa-solid fa-pause" id="btn-pause" onclick="pause()"></i>
+                <i class="fa-solid fa-forward-step" onclick="next()"></i>
+                <i class="fa-solid fa-bars" onclick="show_playlist()"></i>
+
+            </div>
+        </div>
+
+        <div class="playlist">
+            <h3>PLAYLIST <i class="fa-solid fa-xmark" id="close_pl" onclick="close_playlist()"></i></h3>
+            <div id="list_music"></div>
+        </div>
+    </div>
+
+    <script src="./assets/scripts/sounds.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/2b239a5a65.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

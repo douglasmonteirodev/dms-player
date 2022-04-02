@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../bg-music/bg003.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif, arial;
+
+}
+
+.player_container {
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.788);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 450px;
+    height: 600px;
+    text-align: center;
+}
+
+.player_music {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 15px auto 25px auto;
+    font-size: 35px;
+}
+
+img {
+    margin-top: -25px;
+    width: 180px;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin: 15px auto 10px auto;
+}
+
+.description, .volume, .bar_progress, .controls {
+    margin-top: 10px;
+}
+
+#volume_bar {
+    -webkit-appearance: none;
+    width: 25%;
+    height: 10px;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+}
+
+#vol, #muted {
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+#bar_progress {
+    margin-top: 20px;
+    -webkit-appearance: none;
+    width: 80%;
+    height: 10px;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+#bar_progress::-webkit-slider-thumb, #volume_bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    box-shadow: -400px 0 0 400px #9525a3;
+}
+
+.controls, .timer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn-pause, #muted {
+    display: none;
+}
+
+
+.btn_tocar {
+    padding-right: 25px;
+    vertical-align: middle;
+}
+
+.fa-solid {
+    font-size: 30pt;
+    cursor: pointer;
+}
+
+.fa-solid:hover {
+    font-size: 50px;
+}
+
+.fa-xmark {
+    float: right;
+    margin-right: 25px;
+}
+
+.playlist {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    max-height: 100%;
+}
+
+h3 {
+    margin-left: 25px;
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.pl_music {
+    font-size: 20px;
+    background: rgba(136, 121, 121, 0.199);
+    margin-bottom: 5px;
+    border: solid 1px white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+#list_music {
+    overflow: auto;
+}
+
+#list_music::-webkit-scrollbar {
+    width: 12px;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#list_music::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 6px;
+}
