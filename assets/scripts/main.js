@@ -94,7 +94,7 @@ function att_dados() {
   btn_play.style.display = "none";
   btn_pause.style.display = "flex";
   sound.play();
-  setTimeout(duration_song, 500);
+  setTimeout(duration_song, 1000);
 }
 
 function duration_song() {
@@ -115,6 +115,7 @@ function format_timer(time) {
 
 setInterval(() => {
   bar_progress.value = sound.currentTime;
+
   if (bar_progress.value <= 3) {
     bar_progress.setAttribute("max", sound.duration);
   }
@@ -125,7 +126,7 @@ setInterval(() => {
     next();
   }
   elapsed_time.innerHTML = format_timer(sound.currentTime);
-}, 250);
+}, 1000);
 
 bar_progress.addEventListener("input", () => {
   sound.currentTime = bar_progress.value;
