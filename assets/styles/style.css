@@ -104,12 +104,6 @@ h2 {
     display: none;
 }
 
-
-.btn_tocar {
-    padding-right: 25px;
-    vertical-align: middle;
-}
-
 .fa-solid {
     font-size: 30pt;
     cursor: pointer;
@@ -139,12 +133,17 @@ h3 {
 }
 
 .pl_music {
-    font-size: 20px;
+    font-size: 1rem;
     background: rgba(136, 121, 121, 0.199);
     margin-bottom: 5px;
     border: solid 1px white;
     padding: 15px;
     border-radius: 6px;
+    cursor: pointer;
+}
+
+.pl_music:hover {
+    background-color: rgba(0, 0, 0, 0.712);
 }
 
 #list_music {
@@ -160,4 +159,14 @@ h3 {
 #list_music::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.295);
     border-radius: 6px;
+}
+
+@media (max-width : 500px) {
+    .player_container {
+        width: 90%;
+    }
+
+    .playlist h3 {
+        font-size: 2rem;
+    }
 }

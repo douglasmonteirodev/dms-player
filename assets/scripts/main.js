@@ -19,8 +19,7 @@ var i = 0;
 document.addEventListener("DOMContentLoaded", () => {
   sound.src = list_songs[i].src_audio;
   list_songs.forEach((musica) => {
-    list_music.innerHTML += `<div class="pl_music">
-                            <i class="fa-solid fa-play btn_tocar"></i>
+    list_music.innerHTML += `<div class="pl_music btn_tocar">
                             ${musica.name_music} - ${musica.artist}
                             </div> `;
     add_click_playlist();
