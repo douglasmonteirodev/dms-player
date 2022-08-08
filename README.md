@@ -1,6 +1,10 @@
 # DMS PLAYER
 
-## Projeto usando Javscript puro
+## Projeto usando Javascript puro
+
+<p align="center">
+      <img src="assets/preview/home_preview.png">
+</p>
 
 ## GitPage: https://douglasmonteirodev.github.io/dms-player/
 
