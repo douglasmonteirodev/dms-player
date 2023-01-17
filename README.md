@@ -1,24 +1,21 @@
 # DMS PLAYER
 
-## Projeto usando Javascript puro
+[![Blog](https://img.shields.io/website?label=deploy&style=for-the-badge&url=https://douglasmonteirodev.github.io/dms-player/)](https://douglasmonteirodev.github.io/dms-player/)
 
 <p align="center">
-      <img src="assets/preview/home_preview.png">
+  <img src="assets/preview/home_preview.png">
 </p>
 
-## GitPage: https://douglasmonteirodev.github.io/dms-player/
+## Objetivo:
 
-## Informações
+### Foi criar um reprodutor de música com grande das partes das funcionalidades de um reprodutor padrão.
 
-### Objetivo desse projeto foi criar um reprodutor de música com grande das partes das funcionalidades de um reprodutor padrão.
+## Descrição:
 
-## Descrição
+- `Projeto usando javascript puro.`
+- `Há uma playlist onde é listada todas as músicas.`
+- `Botões next e back.`
+- `Barra de reprodução, sendo possivel ir para qualquer parte da música.`
+- `E possui um design responsivo.`
 
-- `Há uma playlist onde é listada todas as músicas`
-- `Botões next e back`
-- `Barra de reprodução, sendo possivel ir para qualquer parte da música`
-- `E possui um design responsivo`
-
-
-# Douglas Monteiro ❤😎
-
+## <i>Douglas Monteiro</i> 😁🔥🚀
